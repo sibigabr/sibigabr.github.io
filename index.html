@@ -10,6 +10,14 @@
 
 		body {
  		background-color: #000000;
+		width: 100%;
+		align-items: center;
+		}
+
+		.page-container {
+  		display: flex;
+  		flex-direction: column;
+		width: 100%;
 		}
 
 		html,
@@ -48,10 +56,13 @@
 		}
 
 		footer {
-  		margin-top: auto;
-  		width: 97%;
-  		padding: 0px; /* Adjust the padding to reduce the height */
-		}		
+		display: flex;
+  		justify-content: space-between;
+  		margin-bottom: 10px;
+		background-color: #000000;
+		color: #fff;
+		padding: 0px;
+		}
 
 		.job-title {
   		font-size: 24px;
@@ -112,6 +123,12 @@
 		background-color: #000000;
 		color: #fff;
 		padding: 20px;
+		}
+
+		.bottom-section {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 		}
 
 		.profile-picture {
@@ -251,6 +268,11 @@
     		flex-direction: column;
   			}
 
+			.bottom-section {
+    		flex-direction: column;
+			display: flex;
+  			}
+
   			.profile-picture {
    			width: 200px;
     		height: 200px;
@@ -264,7 +286,9 @@
 
   			.left-section,
   			.right-section,
-			.top-section {
+			.top-section,
+			.bottom-section {
+			display: flex;
     		padding: 10px;
     		width: 100%;
   			}
@@ -298,6 +322,7 @@
             <p>I am a highly motivated software engineer with experience in a variety of programming languages and technologies. My passion for coding and problem-solving drives me to constantly learn and improve my skills. I am eager to contribute to meaningful projects and collaborate with talented teams.</p>
         </section>
     </div>
+	
     <div class="content">
         <div class="left-section">
 			<section class="section-3d">
@@ -514,22 +539,24 @@
                 </div>
             </section>
         </div>
-    </div>	
-
-	<footer>
-		<div class="contact">
-			<section class="section-3d">
-		  		<h2>Contact</h2>
-		 		 <ul>
-					<li><i class="fas fa-phone"></i> <a href="tel:+41 78 403 76 20">+41 78 403 76 20</a></li>
-					<li><i class="fas fa-envelope"></i> <a href="mailto:gsibix@me.com">gsibix@me.com</a></li>
-					<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a></li>
-					<li><i class="fas fa-map-marker-alt"></i> Talweg 11, 4437 Waldenburg</li>
-		 		 </ul>
-			</section>
+	</div>
+		<div class="bottom.section">
+		<footer>
+			<div class="contact">
+				<section class="section-3d">
+		  			<h2>Contact</h2>
+		 		 	<ul>
+						<li><i class="fas fa-phone"></i> <a href="tel:+41 78 403 76 20">+41 78 403 76 20</a></li>
+						<li><i class="fas fa-envelope"></i> <a href="mailto:gsibix@me.com">gsibix@me.com</a></li>
+						<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a></li>
+						<li><i class="fas fa-map-marker-alt"></i> Talweg 11, 4437 Waldenburg</li>
+		 		 	</ul>
+				</section>
+			</div>
+		</footer>
 		</div>
-	</footer>
-	  
+
+
 </body>
 </html>
 
