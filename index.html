@@ -7,6 +7,36 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Curriculum Vitae Gabriele Sibilla</title>
     <style>
+		@media only screen and (max-width: 767px) {
+  			.container {
+    		width: 100%;
+  			}
+
+  			.left-section, .right-section {
+   			width: 100%;
+   			box-sizing: border-box;
+  			}
+
+  			.left-section {
+    		padding-bottom: 20px;
+  			}
+
+  			.right-section {
+    		padding-top: 20px;
+  			}
+
+  			.contact-list {
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+  			}
+
+  			.contact-list li {
+    		flex: 0 0 48%;
+    		margin-bottom: 10px;
+  			}
+		}
+
 
   		body {
     		font-family: 'Open Sans', sans-serif;
@@ -50,19 +80,6 @@
 		footer {
   		margin-top: auto;
   		width: 100%;
-		}
-
-		/* Media queries for different devices */
-		@media (max-width: 600px) {
-  		/* Mobile styles */
-		}
-
-		@media (min-width: 601px) and (max-width: 1024px) {
-		  /* Tablet styles */
-		}
-
-		@media (min-width: 1025px) {
-		  /* Desktop styles */
 		}
 
 		.job-title {
