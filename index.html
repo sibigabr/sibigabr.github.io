@@ -9,11 +9,19 @@
     <style>
 
 		body {
+		display: flex;
+		flex-direction: column;
  		background-color: #000000;
   		margin: 0;
   		height: 100vh; /* 100% of viewport height */
   		width: 100vw; /* 100% of viewport width */
   		overflow-x: hidden; /* Hide horizontal overflow */
+		}
+
+		html,
+		body {
+  		height: 100%;
+  		margin: 0;
 		}
 
 		header {
@@ -245,6 +253,7 @@
 
   			.content {
     		flex-direction: column;
+			flex: 1 0 auto;
   			}
 
   			.left-section,
@@ -252,6 +261,9 @@
     		padding: 10px;
     		width: 100%;
   			}
+
+			footer {
+			flex-shrink: 0;
 
 			.contact ul {
     		flex-direction: column;
