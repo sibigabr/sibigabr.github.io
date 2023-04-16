@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Curriculum Vitae Gabriele Sibilla</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: url('left-bg.jpg') no-repeat left bottom;
-            background-color: #f5f5f5;
-        }
+
+  		body {
+    		font-family: 'Open Sans', sans-serif;
+   			line-height: 1.6;
+    		margin: 0;
+    		padding: 20px;
+   			color: rgb(255, 255, 255);
+   			background: #000000;
+  		
+		}
         header {
             background: linear-gradient(to right, #4b6cb7, #182848);
             background-image: url('geometric-shapes.png');
@@ -33,6 +37,33 @@
             align-items: center;
             justify-content: space-between;
         }
+
+		/* Set different fonts for the first name and last name */
+		.first-name {
+  			font-family: 'Arial', sans-serif;
+		}
+
+		.last-name {
+  		font-family: 'Times New Roman', serif;
+		}
+
+		footer {
+  		margin-top: auto;
+  		width: 100%;
+		}
+
+		/* Media queries for different devices */
+		@media (max-width: 600px) {
+  		/* Mobile styles */
+		}
+
+		@media (min-width: 601px) and (max-width: 1024px) {
+		  /* Tablet styles */
+		}
+
+		@media (min-width: 1025px) {
+		  /* Desktop styles */
+		}
 
 		.job-title {
     		font-size: 24px;
@@ -72,24 +103,24 @@
         /* Sections */
         section {
             border: 2px solid #e6e6e61c;
-            padding: 30px;
+            padding: 10px;
             margin: 20px 0;
         }
 
 		.section-3d {
     		position: relative;
-    		padding: 20px;
-    		background-color: #acd5e946;
+    		padding: 10px;
+    		background-color: #c6e8f918;
     		border-radius: 5px;
     		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     		transform: perspective(200px);
-    		margin-bottom: 40px;
+    		margin-bottom: 10px;
     		z-index: 1;
 		}
         .top-section {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .profile-picture {
@@ -100,23 +131,91 @@
         }
 
         .content {
-            display: flex;
-            justify-content: space-between;
+			display: flex;
+    		height: 100%;
+    		margin: 0 auto;
+    		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    		background-color: #fff;
         }
+			
+		.contact {
+  			width: 100%;
+			background-color: rgb(0, 0, 0);
+			color: #fff;
+		}
+
+		.contact ul {
+		list-style-type: none;
+  		padding: 0;
+  		display: flex;
+  		justify-content: space-around;
+  		flex-wrap: wrap;
+		}
+
+		.contact li {
+  		margin-bottom: 5px;
+		}
+
+		.contact i {
+  		margin-right: 5px;
+		}
+
+		.left-section,
+  		.right-section {
+    		display: flex;
+    		flex-direction: column;
+    		padding: 20px;
+			justify-content: space-between;
+  		}
 
         .left-section {
-            width: 40%;
-			display: flex;
-    		flex-direction: column;
-   			align-items: stretch;
+            flex: 0.4; /* 40% width */
+    		background-color: #000000;
+   			color: #fff;
+			justify-content: space-between;
         }
 
         .right-section {
-            width: 60%;
-			display: flex;
-    		flex-direction: column;
-   			align-items: stretch;
+    		flex: 0.6; /* 60% width */
+    		background-color: rgb(0, 0, 0);
+			color: #fff;
+			justify-content: space-between;
         }
+
+		.language-columns {
+    		display: flex;
+    		justify-content: space-between;
+  		}
+
+  		.language-left,
+  		.language-right {
+    		flex: 1;
+  		}
+
+  		.language-left ul,
+  		.language-right ul {
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+  		}
+
+		.dots {
+    		display: flex;
+   			justify-content: center;
+    		margin-top: 5px;
+  		}
+
+  		.dot {
+    		width: 8px;
+    		height: 8px;
+    		border-radius: 50%;
+    		background-color: #d3d3d3;
+    		margin-right: 5px;
+  		}
+
+  		.filled {
+    		background-color: #00BFFF;
+  		}
 
         .skills-section {
             display: flex;
@@ -135,6 +234,7 @@
             text-anchor: middle;
             dominant-baseline: central;
         }
+
     </style>
 </head>
 <body>
@@ -149,28 +249,99 @@
     	</div>
     </header>
 	<div class="top-section">
-        <section>
+        <section class="section-3d" >
             <h2>About Me</h2>
             <p>I am a highly motivated software engineer with experience in a variety of programming languages and technologies. My passion for coding and problem-solving drives me to constantly learn and improve my skills. I am eager to contribute to meaningful projects and collaborate with talented teams.</p>
         </section>
     </div>
     <div class="content">
         <div class="left-section">
-            <section class="section-3d">
-                <h2>Education</h2>
-                <ul>
-                    <li>Bachelor of Science in Biology, University of Basel, 2018-2021</li>
-					<li>Master of Science in Molecular Biology, University of Basel, 2021-2023</li>
-                </ul>
-            </section>
-
+			<section class="section-3d">
+				<h2>Experience</h2>
+				<ul>
+					<li>Software Engineer, ABC Company, 2021 - Present</li>
+					<li>Intern, Software Development, DEF Corporation, 2020</li>
+				</ul>
+			</section>
+			<div class="languages">
             <section class="section-3d">
                 <h2>Languages</h2>
-                <ul>
-                    <li>English (Native)</li>
-                    <li>Spanish (Conversational)</li>
-                </ul>
+				<div class="language-columns">
+					<div class="language-left">
+                	<ul>
+						<li>
+					 	 English
+					 	 <div class="dots">
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+						  </div>
+						</li>
+						<li>
+							German
+							<div class="dots">
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							</div>
+						  </li>
+						  <li>
+							Italian
+							<div class="dots">
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							</div>
+					  	  </li>
+					</ul>
+					<div class="language-right">
+					<ul>
+						<li>
+					  		French
+					  		<div class="dots">
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot filled"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+					 	 </div>
+						</li>
+						<li>
+							Spanish
+							<div class="dots">
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							</div>
+					  	</li>
+					</ul>
+					</div>
+				</div>
             </section>
+			</div>
 
             <section class="section-3d">
                 <h2>References</h2>
@@ -183,12 +354,12 @@
 	
 		<div class="right-section">
 			<section class="section-3d">
-				<h2>Experience</h2>
-				<ul>
-					<li>Software Engineer, ABC Company, 2021 - Present</li>
-					<li>Intern, Software Development, DEF Corporation, 2020</li>
-				</ul>
-			</section>
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Science in Biology, University of Basel, 2018-2021</li>
+					<li>Master of Science in Molecular Biology, University of Basel, 2021-2023</li>
+                </ul>
+            </section>
 	
 			<section class="section-3d">
 				<h2>Skills</h2>
@@ -200,9 +371,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -211,9 +382,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -222,9 +393,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -233,9 +404,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -249,9 +420,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -260,9 +431,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -271,9 +442,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -282,9 +453,9 @@
 								<div style="display: flex; align-items: center; justify-content: space-between;">
 									<span>Skill</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#eee" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#4b6cb7" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#4b6cb7" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
 									</svg>
 								</div>
 							</li>
@@ -294,8 +465,22 @@
                 </div>
             </section>
         </div>
-    </div>
+    </div>	
 
-	
+	<footer>
+		<div class="contact">
+			<section class="section-3d">
+		  		<h2>Contact</h2>
+		 		 <ul>
+					<li><i class="fas fa-phone"></i> <a href="tel:+41 78 403 76 20">+41 78 403 76 20</a></li>
+					<li><i class="fas fa-envelope"></i> <a href="mailto:gsibix@me.com">gsibix@me.com</a></li>
+					<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a></li>
+					<li><i class="fas fa-map-marker-alt"></i> Talweg 11, 4437 Waldenburg</li>
+		 		 </ul>
+			</section>
+		</div>
+	  </footer>
+	  
 </body>
 </html>
+
