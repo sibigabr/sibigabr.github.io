@@ -7,70 +7,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Curriculum Vitae Gabriele Sibilla</title>
     <style>
-		@media only screen and (max-width: 767px) {
-  			.container {
-    		width: 100%;
-  			}
-
-  			.left-section, .right-section {
-   			width: 100%;
-   			box-sizing: border-box;
-  			}
-
-  			.left-section {
-    		padding-bottom: 20px;
-  			}
-
-  			.right-section {
-    		padding-top: 20px;
-  			}
-
-  			.contact-list {
-    		display: flex;
-    		flex-wrap: wrap;
-    		justify-content: space-between;
-  			}
-
-  			.contact-list li {
-    		flex: 0 0 48%;
-    		margin-bottom: 10px;
-  			}
+		header {
+  		background: linear-gradient(to right, #4b6cb7, #182848);
+  		background-image: url('geometric-shapes.png');
+  		background-blend-mode: multiply;
+  		text-align: center;
+  		padding: 5px;
+  		width: 100%;
+  		height: 400px;
+  		display: flex;
+  		align-items: center;
 		}
 
-
-  		body {
-    		font-family: 'Open Sans', sans-serif;
-   			line-height: 1.6;
-    		margin: 0;
-    		padding: 20px;
-   			color: rgb(255, 255, 255);
-   			background: #000000;
-  		
+		.header-content {
+  		width: 75%;
+  		margin-inline-end: 50px;
+  		margin-inline-start: 50px;
+  		display: flex;
+  		align-items: center;
+  		justify-content: space-between;
 		}
-        header {
-            background: linear-gradient(to right, #4b6cb7, #182848);
-            background-image: url('geometric-shapes.png');
-            background-blend-mode: multiply;
-            text-align: center;
-            padding: 5px;
-			width: 100%;
-            height: 400px; /* Updated height */
-            display: flex;
-            align-items: center;
-        }        
 
-        .header-content {
-            width: 75%; /* Set the width to two-thirds */
-            margin-inline-end: 50pxs;
-			margin-inline-start: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-		/* Set different fonts for the first name and last name */
 		.first-name {
-  			font-family: 'Arial', sans-serif;
+ 		font-family: 'Arial', sans-serif;
 		}
 
 		.last-name {
@@ -83,86 +42,86 @@
 		}
 
 		.job-title {
-    		font-size: 24px;
-   			font-family: 'Arial', sans-serif;
-    		color: #fff;
+  		font-size: 24px;
+  		font-family: 'Arial', sans-serif;
+  		color: #fff;
 		}
 
 		h1 {
-            font-size: 60px; /* Increased font size */
-            font-family: 'Arial', sans-serif; /* Modern and stylish font */
-            color: #fff;
-            margin-bottom: 10px;
-        }
+  		font-size: 60px;
+  		font-family: 'Arial', sans-serif;
+  		color: #fff;
+  		margin-bottom: 10px;
+		}
 
-        h2 {
-            margin-bottom: 5px;
-            font-size: 20px;
-			font-family: 'Playfair Display', serif;
-        }
+		h2 {
+  		margin-bottom: 5px;
+  		font-size: 20px;
+  		font-family: 'Playfair Display', serif;
+		}
 
 		h3 {
-            font-size: 24px;
-            font-family: 'Arial', sans-serif; /* Modern and stylish font */
-            color: #fff;
-        }
+  		font-size: 24px;
+  		font-family: 'Arial', sans-serif;
+  		color: #fff;
+		}
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
+		ul {
+  		list-style: none;
+  		padding-left: 0;
+		}
 
-        li {
-            margin-bottom: 10px;
-            text-align: center;
-        }
+		li {
+  		margin-bottom: 10px;
+  		text-align: center;
+		}
 
-        /* Sections */
-        section {
-            border: 2px solid #e6e6e61c;
-            padding: 10px;
-            margin: 20px 0;
-        }
+		section {
+		border: 2px solid #e6e6e61c;
+		padding: 10px;
+		margin: 20px 0;
+		}
 
 		.section-3d {
-    		position: relative;
-    		padding: 10px;
-    		background-color: #c6e8f918;
-    		border-radius: 5px;
-    		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    		transform: perspective(200px);
-    		margin-bottom: 10px;
-    		z-index: 1;
+  		position: relative;
+  		padding: 10px;
+  		background-color: #c6e8f918;
+  		border-radius: 5px;
+  		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  		transform: perspective(200px);
+  		margin-bottom: 10px;
+  		z-index: 1;
 		}
-        .top-section {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
 
-        .profile-picture {
-            width: 380px;
-            height: 380px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+		.top-section {
+  		display: flex;
+  		justify-content: space-between;
+  		margin-bottom: 10px;
+		}
 
-        .content {
-			display: flex;
-    		height: 100%;
-    		margin: 0 auto;
-    		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    		background-color: #fff;
-        }
-			
+		.profile-picture {
+  		width: 380px;
+  		height: 380px;
+  		border-radius: 50%;
+  		object-fit: cover;
+		}
+
+		.content {
+  		display: flex;
+  		height: 100%;
+  		margin: 0 auto;
+  		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  		background-color: #fff;
+		}
+
 		.contact {
-  			width: 100%;
-			background-color: rgb(0, 0, 0);
-			color: #fff;
+  		width: 100%;
+  		background-color: rgb(0, 0, 0);
+  		color: #fff;
 		}
 
 		.contact ul {
-		list-style-type: none;
+  		list-style-type: none;
   		padding: 0;
   		display: flex;
   		justify-content: space-around;
@@ -178,82 +137,109 @@
 		}
 
 		.left-section,
-  		.right-section {
-    		display: flex;
-    		flex-direction: column;
-    		padding: 20px;
-			justify-content: space-between;
-  		}
+		.right-section {
+  		display: flex;
+  		flex-direction: column;
+  		padding: 20px;
+  		justify-content: space-between;
+		}
 
-        .left-section {
-            flex: 0.4; /* 40% width */
-    		background-color: #000000;
-   			color: #fff;
-			justify-content: space-between;
-        }
+		.left-section {
+  		flex: 0.4;
+  		background-color: #000000;
+  		color: #fff;
+  		justify-content: space-between;
+		}
 
-        .right-section {
-    		flex: 0.6; /* 60% width */
-    		background-color: rgb(0, 0, 0);
-			color: #fff;
-			justify-content: space-between;
-        }
+		.right-section {
+  		flex: 0.6;
+  		background-color: rgb(0, 0, 0);
+  		color: #fff;
+  		justify-content: space-between;
+		}
 
 		.language-columns {
-    		display: flex;
-    		justify-content: space-between;
-  		}
+  		display: flex;
+  		justify-content: space-between;
+		}
 
-  		.language-left,
-  		.language-right {
-    		flex: 1;
-  		}
+		.language-left,
+		language-right {
+  		flex: 1;
+		}
 
-  		.language-left ul,
-  		.language-right ul {
-    		margin: 0;
-    		padding: 0;
-    		list-style: none;
-  		}
+		.language-left ul,
+		.language-right ul {
+  		margin: 0;
+ 		 padding: 0;
+  		list-style: none;
+		}
 
 		.dots {
-    		display: flex;
-   			justify-content: center;
-    		margin-top: 5px;
+  		display: flex;
+  		justify-content: center;
+  		margin-top: 5px;
+		}
+
+		.dot {
+  		width: 8px;
+  		height: 8px;
+  		border-radius: 50%;
+ 		background-color: #d3d3d3;
+  		margin-right: 5px;
+		}
+
+		.filled {
+  		background-color: #00BFFF;
+		}
+
+		.skills-section {
+  		display: flex;
+  		justify-content: space-around;
+		}
+
+		.skill-chart {
+  		width: 50px;
+  		height: 50px;
+ 		display: inline-block;
+ 		margin-right: 5px;
+		}
+
+		.skill-percentage {
+  		font-size: 12px;
+  		text-anchor: middle;
+  		dominant-baseline: central;
+		}
+
+		/* Media query to optimize for mobile devices */
+		@media only screen and (max-width: 768px) {
+  			.header-content {
+    		flex-direction: column;
   		}
 
-  		.dot {
-    		width: 8px;
-    		height: 8px;
-    		border-radius: 50%;
-    		background-color: #d3d3d3;
-    		margin-right: 5px;
+  			.top-section {
+    		flex-direction: column;
   		}
 
-  		.filled {
-    		background-color: #00BFFF;
+  			.profile-picture {
+   			width: 200px;
+    		height: 200px;
+    		margin: 0 auto;
   		}
 
-        .skills-section {
-            display: flex;
-            justify-content: space-around;
-        }
+  			.content {
+    		flex-direction: column;
+  		}
 
-        .skill-chart {
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .skill-percentage {
-            font-size: 12px;
-            text-anchor: middle;
-            dominant-baseline: central;
-        }
-
+  			.left-section,
+  			.right-section {
+    		padding: 10px;
+    		width: 100%;
+  		}
+		}
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
