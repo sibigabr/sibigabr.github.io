@@ -7,6 +7,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Curriculum Vitae Gabriele Sibilla</title>
     <style>
+
+		body {
+ 		background-color: #000000;
+  		margin: 0;
+  		height: 100vh; /* 100% of viewport height */
+  		width: 100vw; /* 100% of viewport width */
+  		overflow-x: hidden; /* Hide horizontal overflow */
+		}
+		
 		header {
   		background: linear-gradient(to right, #4b6cb7, #182848);
   		background-image: url('geometric-shapes.png');
@@ -97,6 +106,8 @@
   		display: flex;
   		justify-content: space-between;
   		margin-bottom: 10px;
+		background-color: #000000;
+		color: #fff;
 		}
 
 		.profile-picture {
@@ -111,7 +122,7 @@
   		height: 100%;
   		margin: 0 auto;
   		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  		background-color: #fff;
+  		background-color: rgb(0, 0, 0);
 		}
 
 		.contact {
@@ -225,6 +236,7 @@
    			width: 200px;
     		height: 200px;
     		margin: 0 auto;
+			margin-top: 10px;
   		}
 
   			.content {
@@ -271,21 +283,21 @@
                 <h2>Languages</h2>
 				<div class="language-columns">
 					<div class="language-left">
-                	<ul>
-						<li>
-					 	 English
-					 	 <div class="dots">
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-						  </div>
-						</li>
-						<li>
+                		<ul>
+							<li>
+					 		 English
+					 	 	<div class="dots">
+							 <div class="dot filled"></div>
+							 <div class="dot filled"></div>
+							 <div class="dot filled"></div>
+							 <div class="dot filled"></div>
+						 	 <div class="dot filled"></div>
+					 		 <div class="dot filled"></div>
+							 <div class="dot filled"></div>
+							 <div class="dot filled"></div>
+							</div>
+							</li>
+							<li>
 							German
 							<div class="dots">
 							  <div class="dot filled"></div>
@@ -311,10 +323,10 @@
 							  <div class="dot filled"></div>
 							</div>
 					  	  </li>
-					</ul>
+						</ul>
 					<div class="language-right">
-					<ul>
-						<li>
+						<ul>
+							<li>
 					  		French
 					  		<div class="dots">
 							<div class="dot filled"></div>
@@ -325,9 +337,9 @@
 							<div class="dot"></div>
 							<div class="dot"></div>
 							<div class="dot"></div>
-					 	 </div>
-						</li>
-						<li>
+					 	 	</div>
+							</li>
+							<li>
 							Spanish
 							<div class="dots">
 							  <div class="dot filled"></div>
@@ -339,8 +351,8 @@
 							  <div class="dot"></div>
 							  <div class="dot"></div>
 							</div>
-					  	</li>
-					</ul>
+					  		</li>
+						</ul>
 					</div>
 				</div>
             </section>
