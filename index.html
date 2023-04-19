@@ -21,10 +21,10 @@
 		}
 
 		.page-container {
-		display: grid;
-  		grid-template-rows: 1fr auto;
-  		height: 100%;
-		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		justify-content: space-between;
 		}
 
 		html,
@@ -145,6 +145,7 @@
 		padding-top: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-top: 20px;
 		}
 
 		.profile-picture {
@@ -156,13 +157,15 @@
 
 		.content {
   		display: flex;
+		flex: 1;
 		justify-content: space-between; /* Center the content horizontally */
   		height: 100%;
   		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   		background-color: rgb(0, 0, 0);
   		min-height: calc(100% - 50px); /* Adjust 50px to the height of your footer */
   		padding-top: 0px;
-		padding-bottom: 80px; /* Same as above */
+		padding-bottom: 80px;
+		margin-bottom: 20px;
 	
 		}
 
@@ -269,7 +272,8 @@
 		
 			header {
     		height: auto; /* Change the header height to auto */
-  			}
+  			margin-bottom: 20px;
+			}
 
   			.header-content {
     		flex-direction: column;
@@ -286,6 +290,8 @@
 
   			.top-section {
     		flex-direction: column;
+			padding-bottom: 0;
+			margin-bottom: 20px;
   			}
 
   			.profile-picture {
@@ -294,20 +300,15 @@
     		margin: 50px;
   			}
 
-  			.content {
-    		flex-direction: column;
-			min-height: calc(100% - 80px); /* Adjust this value to match the footer height + additional margin on mobile devices */
-			padding-bottom: 20px;
-  			}
-
   			.left-section,
   			.right-section,
 			.top-section {
 			display: flex;
     		padding: 10px;
     		width: 100%;
-  			}
-
+			margin-bottom: 20px;
+			}
+			
   			.contact li {
     		margin-bottom: 15px;
   			}
@@ -320,8 +321,13 @@
 			.fixed-footer {
 			width: 100%;
 			height: 40px;
-			margin-top: 20px;
 			}
+
+			.content {
+    		flex-direction: column;
+			height: auto;
+			margin-bottom: 20px;
+  			}
 		}
     </style>
 </head>
@@ -578,6 +584,7 @@
 			</div>
 		</footer>
 	</div>	
+	<script src="main.js"></script>
 
 </body>
 </html>
