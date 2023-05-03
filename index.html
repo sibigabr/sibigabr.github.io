@@ -110,14 +110,33 @@
 		}
 
 		ul {
-  		list-style: none;
   		padding-left: 0;
 		}
 
+		.no-bullets {
+  		list-style-type: none;
+  		padding-left: 0;
+		}	
+
 		li {
   		margin-bottom: 10px;
-  		text-align: center;
+		margin-left: 20px;
+  		text-align: justify;
 		}
+
+		.icon-bullet li {
+  		list-style-type: none;
+  		position: relative;
+  		padding-left: 1.5em;
+		}
+
+		.icon-bullet li::before {
+ 		content: "\f0e8"; /* FontAwesome icon code */
+  		font-family: "Font Awesome 6 Pro"; /* FontAwesome font family */
+  		position: absolute;
+  		left: 0;
+		}
+
 
 		section {
 		border: 2px solid #e6e6e61c;
@@ -347,7 +366,7 @@
 	<div class="top-section">
         <section class="section-3d" >
             <h2>About Me</h2>
-            <p>I am a highly motivated software engineer with experience in a variety of programming languages and technologies. My passion for coding and problem-solving drives me to constantly learn and improve my skills. I am eager to contribute to meaningful projects and collaborate with talented teams.</p>
+            <p>As recent Neurobiology Master's graduate with multilingual proficiency, I am eager to apply my analytical expertise, problem-solving skills, and linguistic abilities to the management sector. My strong foundation in research and scientific communication equips me to decipher intricate challenges and implement innovative solutions. Driven by intellectual curiosity, I am committed to cultivating a dynamic career in management that nurtures both personal and professional growth. My interdisciplinary background and passion for continuous learning enable me to excel in fast-paced environments, while fostering organizational growth and effective cross-cultural communication.</p>
         </section>
     </div>
 
@@ -357,8 +376,12 @@
 			<section class="section-3d">
 				<h2>Experience</h2>
 				<ul>
-					<li>Software Engineer, ABC Company, 2021 - Present</li>
-					<li>Intern, Software Development, DEF Corporation, 2020</li>
+					<li>Intern in Silvia Arber's Laboratory at Biozentrum, Feb. 2023 - Jul. 2023</li>
+					<li>Distinguished engaging presenter: showcased expertise at scientific meetings and conferences, fostering discourse and exchanging innovative ideas within the community</li>
+					<li>Passionate educator with teaching experience: utilized dynamic, interactive methods to enhance understanding</li>
+					<li>Proficient in data analysis and skilled in organizing complex information, adept at drawing insights to drive decision-making</li>
+					<li>Team captain in professional team sport (Icehockey): demonstrated leadership, teamwork, and effective communication; fostered motivation and collaboration in a multiethnical background</li>
+					<li>Culturally adaptable: diverse international education and living experiences; enhanced global perspective and exceptional cross-cultural communication skills; fosters inclusive working environments</li>
 				</ul>
 			</section>
 
@@ -448,9 +471,9 @@
 
             <section class="section-3d">
                 <h2>References</h2>
-				<ul>
-					<li>John Doe - Position at Company</li>
-					<li>John Doe - Position at Company</li>
+				<ul class="icon-bullet">
+					<li> <a href="mailto:silvia.arber@unibas.ch">Prof. Dr. Silvia Arber</a> - Head of Research Group <a href="https://www.biozentrum.unibas.ch/research/research-groups/research-groups-a-z/overview/unit/research-group-silvia-arber">(Biozentrum)</a></li>
+					<li> <a href="mailto:rita.afonso@unibas.ch">Ana Rita Costa Afonso</a> - Phd Graduate Biozentrum</li>
 				</ul>
 			</section>
 		</div>
@@ -459,8 +482,9 @@
 			<section class="section-3d">
                 <h2>Education</h2>
                 <ul>
-                    <li>Bachelor of Science in Biology, University of Basel, 2018-2021</li>
-					<li>Master of Science in Molecular Biology, University of Basel, 2021-2023</li>
+					<li>Master of Science in Molecular Biology <i>summa cum laude</i> (English), University of Basel (Biozentrum), 2021-2023</li>
+                    <li>Bachelor of Science in Biology (Bilingual German/English), University of Basel, 2018-2021</li>
+					<li>Highschool Matura with emphasis in Biology and Chemistry (Bilingual German/English), Gymnasium of Liestal, 2014-2018</li>
                 </ul>
             </section>
 	
