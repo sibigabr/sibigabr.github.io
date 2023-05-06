@@ -18,6 +18,7 @@
  		background-color: #000000;
 		width: 100%;
 		align-items: center;
+		font-family: Arial, sans-serif;
 		}
 
 		.page-container {
@@ -55,14 +56,6 @@
   		justify-content: space-between;
 		}
 
-		.first-name {
- 		font-family: 'Arial', sans-serif;
-		}
-
-		.last-name {
-  		font-family: 'Times New Roman', serif;
-		}
-
 		footer {
 		display: flex;
   		justify-content: space-between;
@@ -71,19 +64,6 @@
 		background-color: #000000;
 		color: #fff;
 		padding: 0px;
-		}
-
-		.fixed-footer {
-  		position: fixed;
-		bottom: 20px;
-		left: 0;
-		right: 0;
-  		width: 100%;
-  		height: 40px; /* Adjust this to your desired footer height */
-  		display: flex;
-  		justify-content: center;
-  		align-items: center;
-		box-sizing: border-box;
 		}
 
 		.job-title {
@@ -100,9 +80,9 @@
 		}
 
 		h2 {
-  		margin-bottom: 5px;
+  		margin-bottom: 10px;
   		font-size: 20px;
-  		font-family: 'Playfair Display', serif;
+  		font-family: 'Arial', sans-serif;
 		}
 
 		h3 {
@@ -121,8 +101,10 @@
 		}	
 
 		li {
-  		margin-bottom: 10px;
+  		margin-bottom: 15px;
+		margin-top: 15px;
 		margin-left: 20px;
+		margin-right: 5px;
   		text-align: justify;
 		}
 
@@ -139,7 +121,6 @@
   		left: 0;
 		}
 
-
 		section {
 		border: 2px solid #e6e6e61c;
 		padding: 10px;
@@ -153,8 +134,16 @@
   		border-radius: 5px;
   		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   		transform: perspective(200px);
-  		margin-bottom: 10px;
+  		margin-bottom: 30px;
   		z-index: 1;
+		}
+
+		.section-title {
+  		position: absolute;
+  		top: -50px; /* Adjust this value to move the title up or down */
+  		left: 5px; /* Adjust this value to move the title left or right */
+  		padding-top: 20px;
+  		z-index: 2;
 		}
 
 		.top-section {
@@ -222,14 +211,14 @@
 		}
 
 		.left-section {
-  		flex: 0.4;
+  		flex: 0.5;
   		background-color: #000000;
   		color: #fff;
   		justify-content: space-between;
 		}
 
 		.right-section {
-  		flex: 0.6;
+  		flex: 0.5;
   		background-color: rgb(0, 0, 0);
   		color: #fff;
   		justify-content: space-between;
@@ -237,30 +226,43 @@
 
 		.language-columns {
   		display: flex;
+		align-items: center;
   		justify-content: space-between;
 		}
 
-		.language-left,
-		.language-right {
+		.language-left{
   		flex: 1;
+		padding-left: 0px;
+		padding-right: 10px;
+		}
+
+		.language-middle{
+		flex: 1;
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+
+		.language-right{
+  		flex: 1;
+		padding-right:10px;
 		}
 
 		.language-left ul,
 		.language-right ul {
   		margin: 0;
- 		 padding: 0;
+ 		padding: 0;
   		list-style: none;
 		}
 
 		.dots {
   		display: flex;
-  		justify-content: center;
+  		justify-content: left;
   		margin-top: 5px;
 		}
 
 		.dot {
-  		width: 8px;
-  		height: 8px;
+  		width: 10px;
+  		height: 10px;
   		border-radius: 50%;
  		background-color: #d3d3d3;
   		margin-right: 5px;
@@ -280,6 +282,7 @@
   		height: 50px;
  		display: inline-block;
  		margin-right: 5px;
+		margin-left: 50px;
 		}
 
 		.skill-percentage {
@@ -337,11 +340,7 @@
 			footer {
 			width: 100%;
 			margin-top: 20px;
-			}
-
-			.fixed-footer {
-			width: 100%;
-			height: 40px;
+			flex: 1 1 auto
 			}
 
 			.content {
@@ -365,9 +364,10 @@
     	</div>
     </header>
 	
+	
 	<div class="top-section">
         <section class="section-3d" >
-            <h2>About Me</h2>
+			<h2 class="section-title">About Me</h2>
             <p>As recent Neurobiology Master's graduate with multilingual proficiency, I am eager to apply my analytical expertise, problem-solving skills, and linguistic abilities to the management sector. My strong foundation in research and scientific communication equips me to decipher intricate challenges and implement innovative solutions. Driven by intellectual curiosity, I am committed to cultivating a dynamic career in management that nurtures both personal and professional growth. My interdisciplinary background and passion for continuous learning enable me to excel in fast-paced environments, while fostering organizational growth and effective cross-cultural communication.</p>
         </section>
     </div>
@@ -376,25 +376,25 @@
     <div class="content">
         <div class="left-section">
 			<section class="section-3d">
-				<h2>Experience</h2>
+				<h2 class="section-title">Experience</h2>
 				<ul>
 					<li>Intern in Silvia Arber's Laboratory at Biozentrum, Feb. 2023 - Jul. 2023</li>
 					<li>Distinguished engaging presenter: showcased expertise at scientific meetings and conferences, fostering discourse and exchanging innovative ideas within the community</li>
 					<li>Passionate educator with teaching experience: utilized dynamic, interactive methods to enhance understanding</li>
 					<li>Proficient in data analysis and skilled in organizing complex information, adept at drawing insights to drive decision-making</li>
 					<li>Team captain in professional team sport (Icehockey): demonstrated leadership, teamwork, and effective communication; fostered motivation and collaboration in a multiethnical background</li>
-					<li>Culturally adaptable: diverse international education and living experiences; enhanced global perspective and exceptional cross-cultural communication skills; fosters inclusive working environments</li>
+					<li>Cultural exposure: diverse international education and living experiences; enhanced global perspective and exceptional cross-cultural communication skills; fosters inclusive working environments</li>
 				</ul>
 			</section>
 
 			<div class="languages">
             	<section class="section-3d">
-					<h2>Languages</h2>
+					<h2 class="section-title">Languages</h2>
 					<div class="language-columns">
 						<div class="language-left">
-                		<ul>
+                		<ul class="no-bullets">
 							<li>
-					 		 English
+							English
 					 	 	<div class="dots">
 							 <div class="dot filled"></div>
 							 <div class="dot filled"></div>
@@ -420,38 +420,43 @@
 							  <div class="dot filled"></div>
 							</div>
 						  	</li>
-
-						  	<li>
-							Italian
-							<div class="dots">
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							  <div class="dot filled"></div>
-							</div>
-					  	  	</li>
 						</ul>
 						</div>
 
-					<div class="language-right">
-						<ul>
+						<div class="language-middle"> 
+						<ul class="no-bullets">
 							<li>
-					  		French
-					  		<div class="dots">
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
-					 	 	</div>
+								Italian
+								<div class="dots">
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								  <div class="dot filled"></div>
+								</div>
 							</li>
+
+							<li>
+								French
+								<div class="dots">
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot filled"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+								</div>
+							</li>
+						</ul>	
+						</div>	
+
+						<div class="language-right">
+						<ul class="no-bullets">
 							<li>
 							Spanish
 							<div class="dots">
@@ -472,7 +477,7 @@
 			</div>
 
             <section class="section-3d">
-                <h2>References</h2>
+                <h2 class="section-title">References</h2>
 				<ul class="icon-bullet">
 					<li> <a href="mailto:silvia.arber@unibas.ch">Prof. Dr. Silvia Arber</a> - Head of Research Group <a href="https://www.biozentrum.unibas.ch/research/research-groups/research-groups-a-z/overview/unit/research-group-silvia-arber">(Biozentrum)</a></li>
 					<li> <a href="mailto:rita.afonso@unibas.ch">Ana Rita Costa Afonso</a> - Phd Graduate Biozentrum</li>
@@ -481,8 +486,9 @@
 		</div>
 	
 		<div class="right-section">
+
 			<section class="section-3d">
-                <h2>Education</h2>
+                <h2 class="section-title">Education</h2>
                 <ul>
 					<li>Master of Science in Molecular Biology <i>summa cum laude</i> (English), University of Basel (Biozentrum), 2021-2023</li>
                     <li>Bachelor of Science in Biology (Bilingual German/English), University of Basel, 2018-2021</li>
@@ -491,51 +497,73 @@
             </section>
 	
 			<section class="section-3d">
-				<h2>Skills</h2>
+				<h2 class="section-title">Skills</h2>
 				<div class="skills-section">
 					<div>
-						<h3>Personal Skills</h3>
+					
 						<ul>
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Communication</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="95, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">95%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Leadership</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="90, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">90%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Problem-Solving</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="95, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">95%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Decision-Making</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="80, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">80%</text>
+									</svg>
+								</div>
+							</li>
+
+							<li>
+								<div style="display: flex; align-items: center; justify-content: space-between;">
+									<span>Conflict Resolution</span>
+									<svg class="skill-chart" viewBox="0 0 36 36">
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="75, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">75%</text>
+									</svg>
+								</div>
+							</li>
+
+							<li>
+								<div style="display: flex; align-items: center; justify-content: space-between;">
+									<span>Networking</span>
+									<svg class="skill-chart" viewBox="0 0 36 36">
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="80, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">80%</text>
 									</svg>
 								</div>
 							</li>
@@ -543,52 +571,74 @@
 						</ul>
 					</div>
 					<div>
-						<h3>Professional Skills</h3>
+	
 						<ul>
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Adaptability</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="100, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">100%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Time-Management</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="80, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">80%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Teamwork</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="100, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">100%</text>
 									</svg>
 								</div>
 							</li>
 
 							<li>
 								<div style="display: flex; align-items: center; justify-content: space-between;">
-									<span>Skill</span>
+									<span>Critical Thinking</span>
 									<svg class="skill-chart" viewBox="0 0 36 36">
 										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
-										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="85, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
-										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">85%</text>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="100, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">100%</text>
 									</svg>
 								</div>
 							</li>
 							
+							<li>
+								<div style="display: flex; align-items: center; justify-content: space-between;">
+									<span>Project Management</span>
+									<svg class="skill-chart" viewBox="0 0 36 36">
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="80, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">80%</text>
+									</svg>
+								</div>
+							</li>
+
+							<li>
+								<div style="display: flex; align-items: center; justify-content: space-between;">
+									<span>Strategic Thinking</span>
+									<svg class="skill-chart" viewBox="0 0 36 36">
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#d3d3d3" stroke-width="3.6"></circle>
+										<circle cx="18" cy="18" r="15.9" fill="none" stroke="#00BFFF" stroke-width="3.6" stroke-dasharray="75, 100" stroke-dashoffset="0" style="transform: rotate(-90deg); transform-origin: center;"></circle>
+										<text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#00BFFF" font-size="10px">75%</text>
+									</svg>
+								</div>
+							</li>
+
                         </ul>
                     </div>
                 </div>
@@ -599,11 +649,11 @@
 		<footer>
 			<div class="contact">
 				<section class="section-3d">
-		  			<h2>Contact</h2>
+					<h2 class="section-title">Contact</h2>
 		 		 	<ul>
 						<li><i class="fas fa-phone"></i> <a href="tel:+41 78 403 76 20">+41 78 403 76 20</a></li>
 						<li><i class="fas fa-envelope"></i> <a href="mailto:gsibix@me.com">gsibix@me.com</a></li>
-						<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriele-sibilla/" target="_blank">LinkedIn</a></li>
+						<li><i class="fab fa-linkedin"></i> <a href="linkedin.com/in/gabriele-sibilla-5a425a275" target="_blank">LinkedIn</a></li>
 						<li><i class="fas fa-map-marker-alt"></i> 4437 Waldenburg</li>
 		 		 	</ul>
 				</section>
