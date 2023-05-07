@@ -339,14 +339,19 @@
 
 			.language-columns{
     		flex-direction: row;
-			flex: 0 1 75%;
+			flex-wrap: wrap;
   			}
 
-			.language-left,
-  			.language-middle,
-  			.language-right {
-    		padding-right: 0;
-    		padding-left: 0;
+			.language-right,
+  			.language-middle {
+    		padding: 0;
+			flex: 1 1 50%;
+  			}
+
+			.language-left {
+    		flex: 1 1 50%;
+    		padding: 0;
+    		order: -1; /* Adjust the order of the language middle column */
   			}
 
 			.skills-section{
