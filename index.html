@@ -292,7 +292,7 @@
 		}
 
 		/* Media query to optimize for mobile devices */
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 720px) {
 		
 			header {
     		height: auto; /* Change the header height to auto */
@@ -334,7 +334,14 @@
 			}
 
 			.language-columns{
-    		flex-direction: column;
+    		flex-direction: row;
+  			}
+
+			.language-left,
+  			.language-middle,
+  			.language-right {
+    		padding-right: 0;
+    		padding-left: 0;
   			}
 
 			.skills-section{
