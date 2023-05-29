@@ -96,11 +96,6 @@
   		padding-left: 0;
 		}
 
-		.no-bullets {
-  		list-style-type: none;
-  		padding-left: 0;
-		}	
-
 		li {
   		margin-bottom: 15px;
 		margin-top: 15px;
@@ -158,6 +153,44 @@
 		padding-right: 20px;
 		margin-top: 20px;
 		}
+
+		.subtop-section {
+    	display: flex;
+    	flex: 1;
+    	flex-direction: row;
+    	margin-bottom: 0px;
+    	background-color: #000000;
+    	color: #fff;
+    	padding-top: 0px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	margin-top: 10px;
+		margin-bottom: 0px;
+    	width: 100%;
+    	box-sizing: border-box; /* Include padding and border in the element's total width and height */
+		}
+
+		.subtop-section .section-3d {
+    	display: flex;
+    	justify-content: space-around;
+    	width: 100%;
+		}
+
+		.subtop-section ul {
+    	display: flex;
+    	justify-content: space-around; /* evenly distribute the list items */
+    	padding: 0;
+    	margin: 0;
+    	width: 100%; /* ensure the ul takes up the full width of its parent */
+		}
+
+		.subtop-section ul li {
+    	flex-grow: 1; /* This allows the list items to take up the remaining space */
+    	text-align: center; /* centers the text in the list items */
+		padding: 0;
+		margin: 0;
+		}
+
 
 		.profile-picture {
   		width: 380px;
@@ -320,6 +353,13 @@
 			margin-top: 10px;
   			}
 
+			  .subtop-section {
+    		flex-direction: column;
+			padding-bottom: 0;
+			margin-bottom: 0px;
+			margin-top: 10px;
+  			}
+
   			.profile-picture {
    			width: 200px;
     		height: 200px;
@@ -394,7 +434,19 @@
 	<div class="top-section">
         <section class="section-3d" >
 			<h2 class="section-title">About Me</h2>
-            <p>As a recent Neurobiology Master's graduate with multilingual proficiency, I am eager to apply my analytical expertise, problem-solving skills, and linguistic abilities to the management sector. My strong foundation in research and scientific communication equips me to decipher intricate challenges and implement innovative solutions. Driven by intellectual curiosity, I am committed to cultivating a dynamic career in management that nurtures both personal and professional growth. My interdisciplinary background and passion for continuous learning enable me to excel in fast-paced environments, while fostering organizational growth and effective cross-cultural communication.</p>
+            <p>As a recent Neurobiology Master's graduate with multilingual proficiency, I am eager to apply my analytical expertise, problem-solving skills, and linguistic abilities to the marketing/finance sector. My strong foundation in research and scientific communication equips me to decipher intricate challenges and implement innovative solutions. Driven by intellectual curiosity, I am committed to cultivating a dynamic career in management that nurtures both personal and professional growth. My interdisciplinary background and passion for continuous learning enable me to excel in fast-paced environments, while fostering organizational growth and effective cross-cultural communication.</p>
+        </section>
+    </div>
+
+	<div class="subtop-section">
+        <section class="section-3d" >
+			<h2 class="section-title">Personal Information</h2>
+            <ul>
+				<li>Nationality: Italy</li>
+				<li>Residence Permit: Permit C</li>
+				<li>Date of Birth: 25.01.1999</li>
+				<li>Driver's License: Category B</li>
+			</ul>
         </section>
     </div>
 
