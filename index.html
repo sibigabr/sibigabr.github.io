@@ -181,7 +181,7 @@
 		.subtop-section ul {
     	display: flex;
     	justify-content: space-around; /* evenly distribute the list items */
-    	padding: 0;
+    	padding-left: 120px;
     	margin: 0;
     	width: 100%; /* ensure the ul takes up the full width of its parent */
 		}
@@ -189,7 +189,7 @@
 		.subtop-section ul li {
     	flex-grow: 1; /* This allows the list items to take up the remaining space */
     	text-align: center; /* centers the text in the list items */
-		padding: 0;
+		padding-right: 100px;
 		margin: 0;
 		}
 
@@ -365,12 +365,14 @@
   			}
 
 			.subtop-section ul {
-			flex-direction: column;
+			flex-direction: row;
+			padding: 0px;
   			}
 
-			.subtop-section li {
+			.subtop-section ul li {
 			display: flex;
-			justify-content: left;
+			justify-content: center;
+			padding: 15px;
   			}
 
 
